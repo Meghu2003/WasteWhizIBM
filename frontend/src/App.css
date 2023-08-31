@@ -1,0 +1,115 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f3e7;
+  color: #333;
+  font-family: "Comic Sans MS", cursive;
+}
+
+h1 {
+  font-family: "Monotype Corsiva", cursive;
+}
+
+header {
+  background-image: url('iStock-1221293664-1.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 50px;
+  color: #dfd8d5;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #bd0b37;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #b8325a;
+  transform: scale(1.05);
+}
+
+.form-section {
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+}
+
+input[type="text"],input[type="number"] ,select {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"],select{
+  border-color: #ff7f50;
+}
+
+
+.output-field {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+input[type="text"],input[type="number"],select {
+  animation: inputBounce 0.5s ease infinite alternate;
+}
+
+@keyframes inputBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+select {
+  padding:10px;
+  color:#867e7e;
+  background-color: white;
+  width: 185px;
+}
+select option {
+  padding: 8px;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+select option:checked {
+  background-color: #007bff;
+  color: white;
+}
+select::after {
+  content: '\25BC'; /* Unicode arrow down character */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+select::after {
+  content: '\25BC';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
